@@ -1,0 +1,51 @@
+@model List<Series>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<script src="~/js/site.js"> </script>
+@if (Model != null)
+{
+    <div class="block1"><p class="block1-p">Золото в слитках</p></div>
+    <div class="categories">
+    <select id="categories" style="width: 100%; height: 40px; font-size: 16px;">
+        <option value="-1"> Все категории </option>
+        <option value="Выдающиеся люди Приднестровья">Выдающиеся люди Приднестровья</option>
+        <option value="Китайский гороскоп">Китайский гороскоп</option>
+    </select>
+    </div>
+       <div class="itc-slider" data-slider="itc-slider">
+        <div class="itc-slider-wrapper">           
+                  @foreach (var series in Model)
+                    {
+                <div class="name" data-category=" @series.Name">
+                       <p class="coin">@series.Name</p>
+                        @foreach (var coin in series.Coins)
+                          {
+                            <div class="itc-slider-item">
+                            <p class="coin" id="font-size" >@coin.Name</p>
+                              @foreach (var side in coin.SideCoins)
+                               {
+                                <p class="image" data-type="@side.Type"><img src="https://www.agroprombank.com/site.coins/content/files/coins//@side.FileName" alt="Изоображение монеты"></p>
+                               }
+                            <button class="changeButton">Развернуть</button><br>
+                            <button class="popupButton">О монете</button>
+                                <div class="modal">
+                                   <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>@coin.DeclareClient</p>
+                                    </div>
+                                </div>
+                                <div class="block-many">
+                            <p class="coin many">@coin.Price</p> <p class="rub">руб.</p>
+                            </div>
+                            </div>
+                          }              
+                      </div>
+                    }
+        </div>    
+       </div>
+}
+
+else
+{
+    <p>No coin series available.</p>
+}
+

@@ -1,0 +1,117 @@
+
+.itc-slider-wrapper {
+    background-color: rgba(205, 214, 219, 0.3);
+}
+.coin {
+    text-align: center;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #6d6e72;
+    letter-spacing: 1.5px;
+    padding-top:20px;
+}
+#font-size {
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+.block1 {
+    background: -webkit-linear-gradient(135deg, rgb(252, 11, 117) 22%, rgb(243, 117, 11), rgb(241, 60, 227) 80%);
+}
+.block1-p {
+    color: white;
+    font-size: 18px;
+    padding: 20px 10px;
+    text-align: right;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+.itc-slider-item {
+    display: inline-block;
+    width: 360px;
+    height:480px;
+    margin:20px 32px;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    padding:25px 10px;
+    color:#1E90FF;
+}
+.many {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: normal;
+    display: inline;
+}
+.rub {
+    font-size: 18px;
+    color: #6d6e72;
+    display: inline;
+}
+
+.popupButton, .changeButton {
+    margin-bottom: 20px;
+    border: 2px solid #1E90FF;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    color: #1E90FF;
+}
+    .popupButton :hover,
+    .popupButton :focus {
+        color: white;
+        background-color: #1E90FF;
+    }
+    .changeButton :hover,
+    .changeButton :focus {
+        color: white;
+        background-color: #1E90FF;
+    }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: left;
+    color: #6d6e72;
+    line-height: 1.5;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+.block-many 
+{
+    display:block;
+}
+
+.categories {
+    width: 250px;
+    margin:20px 0px;
+}

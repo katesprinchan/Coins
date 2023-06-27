@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IiszpAX09CH70gIta6ofNYUb+LeRECJ2ydrkC32h4fuxKojOg8w+ullm/1qDyM8wPiDrOua+h8OXWSw6Ai1lUQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sprin\\OneDrive\\Desktop\\Coins\\Coins\\Coins.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sprin\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
+    "C:\\Users\\sprin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\sprin\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\sprin\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
